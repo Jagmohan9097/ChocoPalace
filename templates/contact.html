@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact Us {% endblock title %}
+    
+
+{% block body %}
+    <div class="container-fluid px-0 text-center">
+        <img src="/static/images/call.jfif" class="d-block w-100"><br>
+        <h1><b>Contact Us</b></h1>
+    </div>
+    <!-- form control -->
+    <form method="POST" action="/contact">
+    {% csrf_token %}
+      <div class="conatiner container-sm w-50">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"> Name 📛</label>
+            <input name="name" type="text" class="form-control border-dark" id="exampleFormControlInput1" placeholder="Enter Your Name">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"> Email 📧</label>
+            <input name="email" type="email" class="form-control border-dark" id="exampleFormControlInput1" placeholder="Enter Your Email Id">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"> Phone ☎️</label>
+            <input name="phone" type="text" class="form-control border-dark" id="exampleFormControlInput1" placeholder="Enter Your Phone Number">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Query 💬</label>
+            <textarea name="query" class="form-control border-dark" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Query"></textarea>
+          </div>
+          <button class="btn btn-dark mb-5" type="submit" style="margin-left: 50%;transform: translateX(-50%);">Submit</button>
+    </div>
+</form>
+{% endblock body %}
+    
+    

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/templates/style.css">
+    </head>
+    <body>
+        <form action="/data" method="POST">
+    {% csrf_token %}
+<p>Name</p>
+<p><input type="text" name="name"></p>
+<p>Email</p>
+<p><input type="text" name="email"></p>
+<p>Phone</p>
+<p><input type="text" name="phone"></p>
+<p>Gender</p>
+<p><input type="radio" name="gender" value="male">Male</p>
+<p><input type="radio" name="gender" value="female">Female</p>
+<p>Country</p>
+<p>
+    <select name="country">
+        <option value="India">India</option>
+         <option value="Pakistan">Pakistan</option>
+          <option value="USA">USA</option>
+    </select>
+</p>
+<p>
+    <input type="checkbox" name="technology[]" value="Bangalore">Bangalore
+</p>
+<p>
+    <input type="checkbox" name="technology[]" value="Chennai">Chennai
+</p>
+<p>
+    <input type="checkbox" name="technology[]" value="Delhi">Delhi
+</p>
+
+<button value=submit>Submit</button>
+</form>
+    </body>
+    </html>
+
+

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}Products{% endblock title %}
+
+
+{% block body %}
+    <div class="container">
+        <h6 style="margin-left: -10%;">Welcome {{request.user}}, <a href="/" style="text-decoration: none;">Logout</a></h6>
+    </div>
+
+
+    <br>
+   
+  
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Products For You 😊</h1>
+        <p class="lead">Quickly get by our orders with affordable prices at your doorstep. <br>Hurry up !!! 🏃 🏃 🏃 </p>
+      </div>
+  
+      <div class="container w-50">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow border-secondary" >
+            <div class="card-header" style="background-color: rgba(105, 105, 105, 0.616);">
+              <h4 class="my-0 font-weight-normal">Raspberry Flavour Chocolate</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$3 <small class="text-muted">/ pc</small></h1>
+               <img src="/static/images/p1.jfif" style="width: 300px; height: 200px; margin-bottom: 10px; border: 1px solid #2e2f2f;"><br>
+              <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Order Now</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow border-secondary">
+            <div class="card-header" style="background-color: rgba(105, 105, 105, 0.616);">
+              <h4 class="my-0 font-weight-normal">Milk Chocolate</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$6 <small class="text-muted">/ pc</small></h1>
+              <img src="/static/images/p4.jfif" style="width: 300px; height: 200px; margin-bottom: 10px; border: 1px solid #2e2f2f;"><br>
+              <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Order Now</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow border-secondary">
+            <div class="card-header" style="background-color: rgba(105, 105, 105, 0.616);">
+              <h4 class="my-0 font-weight-normal">Lava Chocolate</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$9 <small class="text-muted">/ pc</small></h1>
+              <img src="/static/images/p5.jfif" style="width: 300px; height: 200px; margin-bottom: 10px; border: 1px solid #2e2f2f;"><br>
+              <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Order Now</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow border-secondary">
+            <div class="card-header" style="background-color: rgba(105, 105, 105, 0.616);">
+              <h4 class="my-0 font-weight-normal">Dark Chocolate</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$9 <small class="text-muted">/ pc</small></h1>
+              <img src="/static/images/p3.jfif" style="width: 300px; height: 200px; margin-bottom: 10px; border: 1px solid #2e2f2f;"><br>
+              <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Order Now</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow border-secondary">
+            <div class="card-header" style="background-color: rgba(105, 105, 105, 0.616);">
+              <h4 class="my-0 font-weight-normal">Double Flavoured Choco Balls</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$7 <small class="text-muted">/ pc</small></h1>
+              <img src="/static/images/p2.jfif" style="width: 300px; height: 200px; margin-bottom: 10px; border: 1px solid #2e2f2f;"><br>
+              <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        
+  
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+         
+          </div>
+        </footer>
+      </div>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+{% endblock body %}
+    
